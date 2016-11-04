@@ -96,7 +96,7 @@ tbl_fnt["/b4p/cmd/sonde"] = sonde
 
 -- Instanciation du Client MQTT avec une valeur de maintient de 60s
 print("creation de ojbet de connexion")
-m = mqtt.Client(MQTT_CLIENTID, 120, "philuser", "Flo86Max88") -- dans ce mode de test on se passe d'utilisateur et de MdP
+m = mqtt.Client(MQTT_CLIENTID, 120, "login", "PasseWord") -- dans ce mode de test on se passe d'utilisateur et de MdP
 
 -- Declaration d'un message de fin de vie (lwt pour Last Will and Testament)
 -- Le broker MQTT publira ce message quand : qos = 0, retain = 0, data = "offline"
